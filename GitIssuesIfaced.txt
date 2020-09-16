@@ -1,0 +1,61 @@
+ pwd
+/c/Users/vbhadane
+
+vbhadane@LNAR-PF0VXT7T MINGW64 ~
+$ cd vbhadane\Documents\Training\Fullstack\Github
+bash: cd: vbhadaneDocumentsTrainingFullstackGithub: No such file or directory
+
+vbhadane@LNAR-PF0VXT7T MINGW64 ~
+$ cd Documents
+
+vbhadane@LNAR-PF0VXT7T MINGW64 ~/Documents
+$ cd /Training/Fullstack/Github
+bash: cd: /Training/Fullstack/Github: No such file or directory
+
+vbhadane@LNAR-PF0VXT7T MINGW64 ~/Documents
+$ cd Training/Fullstack/Github
+
+vbhadane@LNAR-PF0VXT7T MINGW64 ~/Documents/Training/Fullstack/Github (master)
+$ gpg --list-keys
+gpg: /c/Users/vbhadane/.gnupg/trustdb.gpg: trustdb created
+
+vbhadane@LNAR-PF0VXT7T MINGW64 ~/Documents/Training/Fullstack/Github (master)
+$ gpg --gen-key
+gpg (GnuPG) 2.2.20-unknown; Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Note: Use "gpg --full-generate-key" for a full featured key generation dialog.
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: catalyst88
+Email address: bhadanevaibhav88@gmail.com
+You selected this USER-ID:
+    "catalyst88 <bhadanevaibhav88@gmail.com>"
+
+Change (N)ame, (E)mail, or (O)kay/(Q)uit? O
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: key B9D84238DC15A18D marked as ultimately trusted
+gpg: directory '/c/Users/vbhadane/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/c/Users/vbhadane/.gnupg/openpgp-revocs.d/CC7E17297A23BDD7F9C3750AB9D84238DC15A18D.rev'
+public and secret key created and signed.
+
+pub   rsa2048 2020-09-16 [SC] [expires: 2022-09-16]
+      CC7E1xxxxAB9D84238DC15A18D
+uid                      catalyst88 <bhadanevaibhav@gmail.com>
+sub   rsa2048 2020-09-16 [E] [expires: 2022-09-16]
+
+vbhadane@LNAR-PF0VXT7T MINGW64 ~/Documents/Training/Fullstack/Github (master)
+$ where gpg
+C:\Users\vbhadane\AppData\Local\Programs\Git\usr\bin\gpg.exe
+
+vbhadane@LNAR-PF0VXT7T MINGW64 ~/Documents/Training/Fullstack/Github (master)
+$ git config --global gpg.program "C:\Users\vbhadane\AppData\Local\Programs\Git\usr\bin\gpg.exe" (this command set keys nd then i was able to commit)
